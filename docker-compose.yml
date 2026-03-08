@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: prueba_tecnica
+    environment:
+      - POSTGRES_DB=db_Siguiente_Tecnologia
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Contrasena_Segura
+    ports:
+      - "5438:5432"
+    restart: always
