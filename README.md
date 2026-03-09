@@ -282,6 +282,7 @@ Este enfoque permite resolver el problema de forma sencilla y eficiente.
 El programa puede ejecutarse desde consola pasando el número que se desea extraer.
 
 Comando:
+python section_1_etl/main_etl.py
 python section_2_api/number_logic.py 45
 
 ---
