@@ -2,7 +2,7 @@
 
 # Next Technologies – Technical Test
 
-Este repositorio contiene la solución a la prueba técnica, la cual está dividida en dos partes:
+Este repositorio contiene la solución a la prueba técnica, la cual está dividida en dos partes
 
 1. **Procesamiento y transferencia de datos (ETL)**
 2. **Implementación de lógica de aplicación**
