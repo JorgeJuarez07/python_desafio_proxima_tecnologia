@@ -28,7 +28,26 @@ Para resolver la prueba se utilizaron las siguientes herramientas:
 
 # Instalación y ejecución
 
-## 1. Configurar variables de entorno
+## 1. Clonar el repositorio
+
+Comando:
+git clone https://github.com/JorgeJuarez07/python_desafio_proxima_tecnologia.git
+cd python_desafio_proxima_tecnologia
+
+## 2. Crear un entorno virtual
+
+Se recomienda usar un entorno virtual para aislar las dependencias del proyecto.
+
+Comando:
+python3 -m venv env
+source env/bin/activate
+
+En Windows el comando de activación sería:
+
+Comando:
+env\Scripts\activate
+
+## 3. Configurar variables de entorno
 
 Primero se debe crear un archivo `.env` en la raíz del proyecto con la configuración de la base de datos.
 
@@ -44,33 +63,30 @@ DATABASE_PORT=5438
 Es importante verificar que el puerto configurado no esté siendo utilizado por otro contenedor.
 Esto se puede revisar con:
 
-```bash
+Comando:
 docker ps
-```
 
 Si el puerto está ocupado, se puede cambiar por otro disponible y actualizar también el archivo `docker-compose.yml`.
 
 ---
 
-## 2. Levantar la base de datos
+## 4. Levantar la base de datos
 
 La base de datos se ejecuta utilizando Docker.
 
-```bash
+Comando:
 docker compose up -d
-```
 
 Este comando levantará el contenedor de PostgreSQL en segundo plano.
 
 ---
 
-## 3. Instalar dependencias
+## 5. Instalar dependencias
 
 Después se deben instalar las dependencias necesarias del proyecto:
 
-```bash
+Comando:
 pip install -r requirements.txt
-```
 
 ---
 
@@ -189,9 +205,8 @@ Esta estructura permite evitar duplicación de información y mantener las relac
 
 El proceso completo se puede ejecutar con:
 
-```bash
+Comando:
 python section_1_etl/main_etl.py
-```
 
 Este script se encarga de:
 
@@ -266,8 +281,7 @@ Este enfoque permite resolver el problema de forma sencilla y eficiente.
 
 El programa puede ejecutarse desde consola pasando el número que se desea extraer.
 
-```bash
+Comando:
 python section_2_api/number_logic.py 45
-```
 
 ---
